@@ -1,2 +1,4 @@
-# local-development-setup
-My local development setup in a handy docker compose file
+# Dev Depot
+## Introduction
+
+This repository houses my day-to-day local development setup so I can quickly get my required services up and running, regardless of my host's state
