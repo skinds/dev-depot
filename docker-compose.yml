@@ -36,7 +36,7 @@ services:
     image: atmoz/sftp:latest
   sql:
     container_name: sql
-    ports: 
+    ports:
       - 1433:1433
     environment:
       - ACCEPT_EULA=Y
@@ -46,4 +46,5 @@ services:
     volumes:
       - ${SQL_DATA_PATH}:/var/opt/mssql/data
       - ${SQL_LOG_PATH}:/var/opt/mssql/log
+    restart: always
     image: mcr.microsoft.com/mssql/server:latest
