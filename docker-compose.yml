@@ -16,7 +16,7 @@ services:
   redis-token-cache:
     container_name: redis-tokens
     ports:
-      - 6378:6379
+      - 7379:6379
     restart: always
     image: redis:latest
   seq:
